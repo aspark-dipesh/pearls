@@ -1,0 +1,94 @@
+---
+
+---
+
+<nav
+  class="glass px-2 sm:px-4 py-2.5 rounded absolute top-2 left-5 right-5 md:left-10 md:right-10 z-20"
+>
+  <div class="container flex flex-wrap justify-between items-center mx-auto">
+    <a href="/" class="flex items-center">
+      <span class="self-center text-xl font-semibold whitespace-nowrap">
+        Website
+      </span>
+    </a>
+
+    <div class="flex items-center">
+      <button
+        id="menu-toggle"
+        type="button"
+        class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 md:hidden"
+      >
+        <span class="sr-only">Open main menu</span>
+        <!-- Hamburger icon -->
+        <svg
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+    </div>
+
+    <div class="w-full md:block md:w-auto hidden" id="mobile-menu">
+      <ul
+        class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium"
+      >
+        <li>
+          <a
+            href="#home"
+            class="block py-2 pr-4 pl-3 text-black text-lg rounded md:bg-transparent border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0"
+          >
+            Home
+          </a>
+        </li>
+        <li>
+          <a
+            href="#about-us"
+            class="block py-2 pr-4 pl-3 text-black text-lg border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0"
+          >
+            About
+          </a>
+        </li>
+        <li>
+          <a
+            href="#room-suites"
+            class="block py-2 pr-4 pl-3 text-black text-lg border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0"
+          >
+            Rooms & Suites
+          </a>
+        </li>
+        <li>
+          <a
+            href="#dining"
+            class="block py-2 pr-4 pl-3 text-black text-lg border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0"
+          >
+            Dining
+          </a>
+        </li>
+        <li>
+          <a
+            href="#fitness"
+            class="block py-2 pr-4 pl-3 text-black text-lg hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0"
+          >
+            Spa & Wellness
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<style>
+  .glass {
+    backdrop-filter: blur(16px) saturate(200%);
+    -webkit-backdrop-filter: blur(16px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 12px;
+  }
+</style>

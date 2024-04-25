@@ -1,0 +1,33 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Navbar from "../components/Navbar.astro";
+import Hero from "../components/Hero.astro";
+import About from "../components/About.astro";
+import RoomsSwites from "../components/RoomsSuites.astro";
+import Dining from "../components/Dining.astro";
+import Fitness from "../components/Fitness.astro";
+---
+
+<Layout title="Welcome to Pearls">
+  <header>
+    <Navbar />
+  </header>
+  <main>
+    <section id="home">
+      <Hero />
+    </section>
+    <section id="about-us">
+      <About />
+    </section>
+    <section id="room-suites" class="bg-black">
+      <RoomsSwites />
+    </section>
+    <section id="dining" class="bg-white/80">
+      <Dining />
+    </section>
+    <section id="fitness" class="bg-black">
+      <Fitness />
+    </section>
+  </main>
+</Layout>
